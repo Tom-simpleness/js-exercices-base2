@@ -5,6 +5,15 @@
     <title>Exercice 1</title>
   </head>
   <body>
-      <img src="images/image1.jpg" id="image1" />
+      <img src="images/image1.jpg" id="image" onmouseover='function1()' />
   </body>
+
+  <script>
+
+      document.getElementById("image").addEventListener("mouseover", function1);
+
+      function function1() {
+          document.getElementById("image").src="images/image1_2.jpg"
+      }
+  </script>
 </html>

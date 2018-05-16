@@ -6,11 +6,25 @@
   </head>
   <body>
     <div class="conteneur">
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
+      <img src="images/image1.jpg" id="image1" onmouseover="go('image1')" onmouseout="goOut('image1')" />
+      <img src="images/image2.jpg" id="image2" onmouseover="go('image2')" onmouseout="goOut('image2')" />
+      <img src="images/image3.jpg" id="image3" onmouseover="go('image3')" onmouseout="goOut('image3')" />
+      <img src="images/image4.jpg" id="image4" onmouseover="go('image4')" onmouseout="goOut('image4')" />
+      <img src="images/image5.jpg" id="image5" onmouseover="go('image5')" onmouseout="goOut('image5')" />
     </div>
   </body>
+
+  <script>
+    function go(x){
+        document.getElementById(x).src = 'images/'+x+'_2.jpg';
+    }
+function goOut(x){
+        document.getElementById(x).src ='images/'+x+'.jpg';
+}
+
+  </script>
+
+
+
+
 </html>

@@ -9,4 +9,19 @@
     <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
   </form>
 </body>
+
+
+<script type="text/javascript">
+
+    var valeur = document.getElementById("nom");
+
+
+    valeur.onkeypress = afficherMessage;
+
+    function afficherMessage() {
+        alert(valeur.value);
+    }
+</script>
+
+
 </html>

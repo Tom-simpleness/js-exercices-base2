@@ -8,5 +8,16 @@
   <form>
     <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
   </form>
+  <script type="text/javascript">
+
+      var elem = document.getElementById("nom");
+
+
+      elem.onblur = afficherMessage;
+
+      function afficherMessage() {
+          alert('merci !');
+      }
+  </script>
 </body>
 </html>

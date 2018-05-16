@@ -4,11 +4,31 @@
     <meta charset="utf-8">
     <title>Exercice 6</title>
   </head>
-  <body>
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
+  <body id="test">
+      <img src="images/image1.jpg" id="image1" onmouseover="function1('image1')" onmouseout="function2('image1')"/>
+      <img src="images/image2.jpg" id="image2" onmouseover="function1('image2')" onmouseout="function2('image2')"/>
+      <img src="images/image3.jpg" id="image3" onmouseover="function1('image3')" onmouseout="function2('image3')"/>
+      <img src="images/image4.jpg" id="image4" onmouseover="function1('image4')" onmouseout="function2('image4')"/>
+      <img src="images/image5.jpg" id="image5" onmouseover="function1('image5')" onmouseout="function2('image5')"/>
   </body>
+
+  <script>
+
+      document.getElementById(test).addEventListener("mouseover", function1);
+
+      function function1(x) {
+          document.getElementById(x).src='images/'+x+'_2.jpg';
+      }
+
+      document.getElementById(test).addEventListener("mouseout", function2);
+
+      function function2(x) {
+          document.getElementById(x).src='images/'+x+'.jpg';
+      }
+
+
+
+
+  </script>
+
 </html>
